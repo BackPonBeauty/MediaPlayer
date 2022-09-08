@@ -279,7 +279,9 @@ class SecondActivity: AppCompatActivity() {
             text01.text = nnStr + " " + title_str2
 
             player = MediaPlayer.create(this@SecondActivity, dummyUri)
-            playerStart()
+            if(durationMax_int > 3000) {
+                playerStart()
+            }
             timerStart = true
             mTimer = Timer()
 
@@ -601,7 +603,9 @@ class SecondActivity: AppCompatActivity() {
             //   }
             player = MediaPlayer.create(this@SecondActivity, audioUri)
             player.setOnPreparedListener(){
-                playerStart()
+                if(durationMax2_int > 3000) {
+                    playerStart()
+                }
             }
             mTimerSec = 0.0
          }
