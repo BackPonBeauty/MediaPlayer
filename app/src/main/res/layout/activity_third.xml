@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android" -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/colorPrimaryDark"
+    android:backgroundTint="@color/colorPrimaryDark"
+    tools:context=".MainActivity">
+
+
+    <Button
+        android:id="@+id/button_loop"
+        android:layout_width="32dp"
+        android:layout_height="24dp"
+        android:layout_alignTop="@+id/button_ff"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="16dp"
+        android:layout_toEndOf="@+id/button_ff"
+        android:background="@drawable/rpt_all"
+        android:drawableTint="@color/design_default_color_on_secondary" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="192dp"
+        android:layout_height="192dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="107dp"
+        android:layout_marginTop="1dp"
+        android:contentDescription="@string/todo"
+        android:soundEffectsEnabled="true"
+        app:srcCompat="@android:drawable/list_selector_background" />
+
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="317dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/button_play"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="0dp"
+        android:background="@color/colorPrimaryDark"
+        android:visibility="visible" />
+
+    <Button
+        android:id="@+id/button_play"
+        android:layout_width="54dp"
+        android:layout_height="54dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="40dp"
+        android:layout_marginBottom="0dp"
+        android:layout_toEndOf="@+id/button_rr"
+        android:background="@drawable/ic_baseline_play_arrow_24"
+        android:drawableTint="@color/design_default_color_on_secondary" />
+
+    <TextView
+        android:id="@+id/time00"
+        android:layout_width="155dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/seekBar"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="125dp"
+        android:layout_marginEnd="131dp"
+        android:layout_marginBottom="3dp"
+        android:text="00:00/00:00"
+        android:textAlignment="center"
+        android:textColor="@color/design_default_color_background" />
+
+    <TextView
+        android:id="@+id/text01"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/time00"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="0dp"
+        android:text="@string/title"
+        android:textAlignment="center"
+        android:textColor="@color/design_default_color_background"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/button_rr"
+        android:layout_width="54dp"
+        android:layout_height="54dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="75dp"
+        android:layout_marginBottom="0dp"
+        android:background="@drawable/ic_baseline_fast_rewind_24"
+        android:drawableTint="@color/design_default_color_on_secondary" />
+
+    <Button
+        android:id="@+id/button_ff"
+        android:layout_width="54dp"
+        android:layout_height="54dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="40dp"
+        android:layout_marginBottom="0dp"
+        android:layout_toEndOf="@+id/button_play"
+        android:background="@drawable/ic_baseline_fast_forward_24"
+        android:drawableTint="@color/design_default_color_on_secondary" />
+
+    <ListView
+        android:id="@+id/titlelist"
+        android:layout_width="match_parent"
+        android:layout_height="359dp"
+        android:layout_above="@+id/text01"
+        android:layout_below="@+id/imageView"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="0dp"
+        android:background="@color/design_default_color_background" >
+
+    </ListView>
+
+
+</RelativeLayout>
+    <!--</androidx.coordinatorlayout.widget.CoordinatorLayout> -->

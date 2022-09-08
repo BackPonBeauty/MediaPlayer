@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">TestMediaPlayer</string>
+    <string name="play">再生</string>
+    <string name="pause">一時停止</string>
+    <string name="STOP">停止</string>
+    <string name="loopOn">LoopOn</string>
+    <string name="artist">artist</string>
+    <string name="album">album</string>
+    <string name="title">title</string>
+    <string name="year">year</string>
+    <string name="todo">TODO</string>
+</resources>
